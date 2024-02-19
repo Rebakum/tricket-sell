@@ -1,8 +1,21 @@
 
 document.getElementById('BuyTicketBtn').addEventListener('click', function() {
-  // Scroll to the footer
+  // Scroll to the P.H. Paribabahan  section
   document.getElementById('greenLine').scrollIntoView({ behavior: 'smooth' });
 });
+
+let countLess = 40;
+let count = 0;
+
+const allBtn = document.getElementsByClassName('kbd');
+for (const btn of allBtn){
+  btn.addEventListener('click', function(e){
+    count = count + 1;
+   document.getElementById('seatCount').innerText = count;
+   countLess = countLess - 1;
+   document.getElementById('seatsLeft').innerText = countLess;
+  })
+}
 
 
 
