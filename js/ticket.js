@@ -1,5 +1,8 @@
 
-
+document.getElementById('BuyTicketBtn').addEventListener('click', function() {
+  // Scroll to the footer
+  document.getElementById('greenLine').scrollIntoView({ behavior: 'smooth' });
+});
 
 
 
