@@ -50,7 +50,7 @@
             <h1 class=" text-xl lg:text-7xl font-extrabold text-white">End-to-End Travel with</h1>
           <h2 class="text-xl text-green-500 font-medium">P Paribahan</h2>
           <p class="w-full lg:w-[75%] text-center text-white">Passengers are requested to arrive at the boarding point 30 minutes prior to bus departure. If not, the ticket is deemed cancelled.</p>
-          <button class="btn bg-green-500">Buy Tickets</button>         
+          <button id="BuyTicketBtn"   class="btn green-btn bg-green-500 href="greenLine>Buy Tickets</button>         
           
         </div>
 <!-- coupon section -->
@@ -88,7 +88,7 @@
         </div>
       
   </section>
-    <!-------------- banner end---------- -->
+    <!-------------- banner end--------->
   <!------------ offer section------- -->
 <section class=" mx-auto mt-8 md:my-16 md:mx-16">
   <div class="w-full flex justify-center items-center flex-col gap-5">
@@ -133,7 +133,7 @@
 </section>
   <!------------ offer section- end------ -->
   <!-- ----------P.H. Paribabahan start------ -->
-  <section class="  bg-gray-50 my-16 ">
+  <section id="greenLine" class="  bg-gray-50 my-16 ">
     <div class="mx-auto   ">
       <div class="flex justify-center items-center flex-col p-3 ">
         <h1 class="text-2xl md:text-4xl font-bold my-8">P.H Paribahan</h1>
@@ -330,7 +330,26 @@
           <br>
           <input class="p-5 w-full border-2 " type="text" placeholder="Enter your ID">           
         </div>
-        <button class="btn w-full bg-green-500">Next</button>     
+        
+         <!-- Open the modal using ID.showModal() method -->
+         <button class="btn w-full bg-green-500 text-white" onclick="my_modal_1.showModal()"> Next</button>
+         <dialog id="my_modal_1" class="modal ">
+           <div class="modal-box flex justify-center flex-col ">
+            <div class="flex justify-center items-center">
+             <img class="w-[100px] " src="./images/success.png" alt="">
+
+            </div>
+                 <p class=" text-center text-xl font-bold ">Thank you for booking our Bus Seats. </p>
+                 <p class=" text-center text-xl font-bold ">Weare working hard to find the best service and deals for you</p>
+                 <p class="text-center">Shortly you will find a confirmation in your email.</p>
+             <div class="modal-action w-full flex justify-center items-center">
+               <form method="dialog ">
+                 <!-- if there is a button in form, it will close the modal -->
+                 <button class=" text-xl btn w-full bg-green-500 text-white">Continue</button>
+               </form>
+             </div>
+           </div>
+         </dialog> 
                 
       </form>
         <div class="flex justify-between my-3">
@@ -346,48 +365,9 @@
 
     <!-- ---------selected seat start -------------------->
 
-  </section>
- 
+  </section>  
+</main>   
 
-
-  <!--<section class=" bg-gray-50 my-0 mx-auto">
-    <div class="flex">     
-
-      <div class="flex gap-10 mx-10">
-        <div class="w-1/2 border-2 ">
-              <h1>Select YourSeat</h1>
-                       <div>
-                        <div class="flex justify-center gap-5 my-1 w-full">
-                          <img src="./images/seat-gray.png" alt="">
-                          <span>Available</span>
-                         </div>
-                         <div class="flex justify-center gap-5 my-1 w-full">
-                          <img src="./images/seat-green.png" alt="">
-                          <span>Selected</span>
-                         </div>
-                         <div class="flex justify-end gap-5 my-1 w-full">
-                          <img src="./images/str.png" alt="">
-                    </div>
-                       </div>
-                   
-          </div>
-        <div class=" w-1/2">
-          <h1>Selected Your Seat</h1>
-          <div>
-             <span>seat<sup>0<sup></span>
-              <span>class</span> 
-              <span>price</span>
-
-          </div>
-
-        </div>
-                    
-      </div>
-</div>
-  </section>-->
-</main>
-
-
-      
+<script src="./js/ticket.js"></script>
 </body>
 </html>
