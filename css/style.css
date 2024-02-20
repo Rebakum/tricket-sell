@@ -9,3 +9,7 @@ ba
       width: 20%;
       height: 50px;
 }
+#seatSelected li{
+display: flex;
+justify-content: space-between;
+}

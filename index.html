@@ -8,6 +8,8 @@
       
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
       <script src="https://cdn.tailwindcss.com"></script>
+
+
 </head>
 
 <body class="my-0 ">
@@ -106,14 +108,14 @@
           <img src="./images/cupon-devider.png" alt="">
       
         <div class="p-3 md:p-5">
-          <h1 class="tex-xl md:text-3xl font-bold">NEW15</h1>
+          <h1 class="tex-xl md:text-3xl font-bold" id="new15">NEW15</h1>
           <p class="md:text-xl">Coupon code</p>
         </div>
       </div>
       <div class="flex md:w-1/2 w-full justify-evenly items-center bg-pink-500 h-52 rounded-2xl mt-8 md:my-16">
         <div class="p-2 md:p-5">
           <h1 class="text-xl md:text-3xl font-bold">
-            <span>15%</span> <span>OFF</span>
+            <span>20%</span> <span>OFF</span>
           </h1>
             <p class="font-medium md:text-xl">on your next purchase</p>
             <p>use by Junuary 2024</p>
@@ -122,7 +124,7 @@
           <img src="./images/cupon-devider.png" alt="">
       
         <div class="p-2 md:p-5">
-          <h1 class="tex-xl md:text-3xl font-bold">NEW15</h1>
+          <h1 class="tex-xl md:text-3xl font-bold" id="couple20">Couple 20</h1>
           <p class="md:text-xl">Coupon code</p>
         </div>
       </div>
@@ -188,7 +190,7 @@
  <!-- ---------Per Ticket------------------>
         <div class="flex justify-center items-center flex-col p-10   space-y-2 ">
           <img src="./images/fare.png" alt="">
-          <h1 class="text-4xl font-bold"><span>550</span>Taka</h1>
+          <h1 class="text-4xl font-bold"><span id="ticketPrice">550</span>Taka</h1>
           <p class="text-2xl">Per Seat</p>
         </div>
       </div>
@@ -198,7 +200,7 @@
 
     <!-- ---------Tecket seat section---------- -->
     <!-----------Left section-------------------->
-  <div class="flex flex-col lg:flex-row justify-evenly lg:m-16 bg-white p-2 lg:p-16 rounded-2xl">
+  <div id="ticket-container" class="flex flex-col lg:flex-row justify-evenly lg:m-16 bg-white p-2 lg:p-16 rounded-2xl">
     <div class="flex-1  gap-5  p-5">
       <h1 class="text-xl lg:text-3xl font-bold ">Select Your Seat</h1>
       <div class="flex  justify-between my-3">
@@ -215,74 +217,74 @@
           <img src="images/str.png" alt="">
         </div>
         <div class="flex justify-between gap-10 my-5 w-full">
-          <kbd class="">A</kbd>
-          <kbd class="kbd">A1</kbd>
-          <kbd class="kbd">A2</kbd>
-          <kbd class="kbd">A3</kbd>
-          <kbd class="kbd">A4</kbd>
+          <button class="">A</button>
+          <button class="kbd">A1</button>
+          <button class="kbd">A2</button>
+          <button class="kbd">A3</button>
+          <button class="kbd">A4</button>
         </div> 
         <div class="flex justify-between gap-10 my-5 w-full">
-          <kbd class="">B</kbd>
-          <kbd class="kbd">B1</kbd>
-          <kbd class="kbd">B2</kbd>
-          <kbd class="kbd">B3</kbd>
-          <kbd class="kbd">B4</kbd>
+          <button class="">B</button>
+          <button class="kbd">B1</button>
+          <button class="kbd">B2</button>
+          <button class="kbd">B3</button>
+          <button class="kbd">B4</button>
           </div> 
           <div class="flex justify-between gap-10 my-5 w-full">
-          <kbd class="">C</kbd>
-          <kbd class="kbd">C1</kbd>
-          <kbd class="kbd">C2</kbd>
-          <kbd class="kbd">C3</kbd>
-          <kbd class="kbd">C4</kbd>
+          <button class="">C</button>
+          <button class="kbd">C1</button>
+          <button class="kbd">C2</button>
+          <button class="kbd">C3</button>
+          <button class="kbd">C4</button>
         </div>
         <div class="flex justify-between gap-10 my-5 w-full">
-          <kbd class="">D</kbd>
-          <kbd class="kbd">D1</kbd>
-          <kbd class="kbd">D2</kbd>
-          <kbd class="kbd">D3</kbd>
-          <kbd class="kbd">D4</kbd>
+          <button class="">D</button>
+          <button class="kbd">D1</button>
+          <button class="kbd">D2</button>
+          <button class="kbd">D3</button>
+          <button class="kbd">D4</button>
         </div> 
         <div class="flex justify-between gap-10 my-5 w-full">
-          <kbd class="">E</kbd>
-          <kbd class="kbd">E1</kbd>
-          <kbd class="kbd">E2</kbd>
-          <kbd class="kbd">E3</kbd>
-          <kbd class="kbd">E4</kbd>
+          <button class="">E</button>
+          <button class="kbd">E1</button>
+          <button class="kbd">E2</button>
+          <button class="kbd">E3</button>
+          <button class="kbd">E4</button>
         </div> 
         <div class="flex justify-between gap-10 my-5 w-full">
-          <kbd class="">F</kbd>
-          <kbd class="kbd">F1</kbd>
-          <kbd class="kbd">F2</kbd>
-          <kbd class="kbd">F3</kbd>
-          <kbd class="kbd">F4</kbd>
+          <button class="">F</button>
+          <button class="kbd">F1</button>
+          <button class="kbd">F2</button>
+          <button class="kbd">F3</button>
+          <button class="kbd">F4</button>
         </div>              
         <div class="flex justify-between gap-10 my-5 w-full">
-          <kbd class="">G</kbd>
-          <kbd class="kbd">G1</kbd>
-          <kbd class="kbd">G2</kbd>
-          <kbd class="kbd">G3</kbd>
-          <kbd class="kbd">G4</kbd>
+          <button class="">G</button>
+          <button class="kbd">G1</button>
+          <button class="kbd">G2</button>
+          <button class="kbd">G3</button>
+          <button class="kbd">G4</button>
         </div>
         <div class="flex justify-between gap-10 my-5 w-full">
-          <kbd class="">H</kbd>
-          <kbd class="kbd">H1</kbd>
-          <kbd class="kbd">H2</kbd>
-          <kbd class="kbd">H3</kbd>
-          <kbd class="kbd">H4</kbd>
+          <button class="">H</button>
+          <button class="kbd">H1</button>
+          <button class="kbd">H2</button>
+          <button class="kbd">H3</button>
+          <button class="kbd">H4</button>
         </div>
         <div class="flex justify-between gap-10 my-5 w-full">
-          <kbd class="">I</kbd>
-          <kbd class="kbd">I1</kbd>
-          <kbd class="kbd">I2</kbd>
-          <kbd class="kbd">I3</kbd>
-          <kbd class="kbd">I4</kbd>
+          <button class="">I</button>
+          <button class="kbd">I1</button>
+          <button class="kbd">I2</button>
+          <button class="kbd">I3</button>
+          <button class="kbd">I4</button>
         </div>
         <div class="flex justify-between gap-10 my-5 w-full">
-          <kbd class="">J</kbd>
-          <kbd class="kbd">J1</kbd>
-          <kbd class="kbd">J2</kbd>
-          <kbd class="kbd">J3</kbd>
-          <kbd class="kbd">J4</kbd>
+          <button class="">J</button>
+          <button class="kbd">J1</button>
+          <button class="kbd">J2</button>
+          <button class="kbd">J3</button>
+          <button class="kbd">J4</button>
         </div>      
 
     </div>
@@ -298,17 +300,20 @@
         <p>class</p>
         <p>Price</p>
       </div>
+      <ul id="seatSelected">
+
+      </ul>
       <div class="   flex justify-between  border-b-2  border-gray-400 p-3 ">
         <P>Total Price</P>
-        <p>BDT<span>0:00</span></p>
+        <p>BDT: <span id="totalPrice">0:00</span></p>
       </div>
-      <div class=" my-5 flex justify-center p-3 ">
-        <input class="p-3 lg:px-16" type="text" placeholder="Have any coupon">
-        <button class="btn bg-green-500">Apply</button>
+      <div id="couponSection" class=" my-5 flex justify-center p-3 ">
+        <input  class="p-3 lg:px-16" type="text" id="inputField" placeholder="Have any coupon">
+        <button onclick="applyCoupon()" id="applyBtn" class="btn bg-green-500">Apply</button>
       </div>
       <div class="flex justify-between p-3">
-        <p>Grand Total</p>
-        <p>BDT <span>0:00</span></p>
+        <p >Grand Total</p>
+        <p>BDT <span id="grandTotal">0:00</span></p>
       </div>
 
      </div>
@@ -324,16 +329,16 @@
         <div class="my-2 text-xl space-y-2">
           <label for="">Phone number*</label>      
           <br>
-          <input class="p-5 w-full border-2" type="text" placeholder="Enter your phone number">           
+          <input class="p-5 w-full border-2" id="phoneNumber" type="tel" placeholder="Enter your phone number" oninput="validatePhoneNumber()">          
         </div>
         <div class="my-2 text-xl space-y-2">
           <label for="">Email ID*</label>      
           <br>
-          <input class="p-5 w-full border-2 " type="text" placeholder="Enter your ID">           
+          <input class="p-5 w-full border-2 " type="email" placeholder="Enter your ID">           
         </div>
         
          <!-- Open the modal using ID.showModal() method -->
-         <button class="btn w-full bg-green-500 text-white" onclick="my_modal_1.showModal()"> Next</button>
+         <button class="btn w-full bg-green-500 text-white" onclick="my_modal_1.showModal()" id="nextBtn" disabled> Next</button>
          <dialog id="my_modal_1" class="modal ">
            <div class="modal-box flex justify-center flex-col ">
             <div class="flex justify-center items-center">
@@ -346,7 +351,7 @@
              <div class="modal-action w-full flex justify-center items-center">
                <form method="dialog ">
                  <!-- if there is a button in form, it will close the modal -->
-                 <button class="  text-xl btn w-full bg-green-500 text-white">Continue</button>
+                 <button id ="continueBtn" class="  text-xl btn w-full bg-green-500 text-white" >Continue</button>
                </form>
              </div>
            </div>
