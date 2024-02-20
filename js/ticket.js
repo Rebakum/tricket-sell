@@ -62,12 +62,12 @@ if(priceCount === 2200){
  if (inputField === new15 ) {
     different = priceCount * 0.15;
     console.log(different);
-    document.getElementById("grandTotal").innerText = priceCount - different;
+    document.getElementById("grandTotal").innerText = parseInt(priceCount - different);
     document.getElementById("couponSection").classList.add("hidden");
   } else if (inputField === couple20) {
     different = priceCount * 0.2;
     console.log(different);
-    document.getElementById("grandTotal").innerText = priceCount - different;
+    document.getElementById("grandTotal").innerText = parseInt(priceCount - different);
     document.getElementById("couponSection").classList.add("hidden");
   } else if (inputField !== new15 || couple20) {
     alert("Please right coupon!!");
